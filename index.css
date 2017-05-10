@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: dimgray;
+}
+.taiji{
+    margin: 10% auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    animation: spin 5s linear infinite;
+}
+.tj{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.white{
+    background-color: white;
+    left: 0;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+}
+.black{
+    background-color: black;
+    right: 0;
+    border-radius:0 100% 100% 0/0 50% 50% 0;
+}
+.round{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+}
+.r-w{
+    background-color: white;
+    top: 0;
+    left: 25%;
+}
+.r-b{
+    background-color: black;
+    bottom: 0;
+    left: 25%;
+}
+.small{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    position: absolute;
+    left: 37.5%;
+}
+.s-b{
+    background-color: black;
+    top: 37.5%;
+}
+.s-w{
+    background-color: white;
+    bottom: 37.5%;
+}
+@keyframes spin{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
